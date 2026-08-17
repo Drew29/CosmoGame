@@ -1,0 +1,15 @@
+{
+  "starting_text": ["\"${name}! YOU'RE LATE!\"", "\"I'm Bob, the ultimate Cosmo trainer!\"", "\"Do you have what it takes to be a Cosmo?\"",
+    "\"Just by looking at you... I DON'T THINK SO!\"", "\"Come on, prove you have what it takes to wear that mask!\"", "\"FIGHT ME!!!!!\"",
+  "All of a sudden, everything starts shaking", "\"What was that?\" Bob said, annoyed.", "Lots of loud footsteps fly by overhead", "CCRRAASSHH!!!!",
+  "\"What's going on??!\" Bob said louder, with some fear creeping into his voice.", "There's yelling, then you hear footsteps go down the stairs. Two guys in red University of Utah t-shirts emerge from the doorway.",
+  "One of them says, \"Are you guys ok? Follow us!\" He motions for Bob and I to follow him.", "\"Hhmmmmmm...\" you hear Bob say, \"Something feels off here\"",
+  "The other guy in the Utah shirt says, \"What are you doing? Come with us!\"", "\"How about no,\" Bob says.",
+  "One of them looks a little annoyed, then they look at each other for a split second. One of them gives the other a slight nod, and then they start to walk towards us.",
+  "\"${name}! Now's the time to prove yourself! I'll handle one, you get the other!"],
+  "battle_tutorial": ["The Utah fan taunts at you as he approaches. \"It was nice knowing you, Cosmo.\"", "Utah Fan"],
+  "end_text": ["\"You did good!\" Remarked Bob, \"But it still took you kind of long.\"", "You both walk upstairs, and there's four more guys waiting for you.",
+  "\"HEY, WHERE ARE THE OTHER TWO!!!???\" One of them says angrily", "\"Bob looks at you, then says excitedly, \"Round 2!\""],
+  "battle_2": ["Two of them look at you and say, \"This should be easy\"", "Utah Fan", "Utah Fan"],
+  "last_text": ["The end! You saved the day because I haven't made the rest of the story yet."]
+}
