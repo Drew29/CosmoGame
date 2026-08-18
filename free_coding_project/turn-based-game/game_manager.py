@@ -115,7 +115,7 @@ class GameManager:
             if enemy == "Utah Fan":
                 enemy_objects.append(UtahFan())
 
-        music.start_music()
+        music.start_music(loops=-1)
         battle = Battle(self.player, enemy_objects, music)
         return battle.battle()
 

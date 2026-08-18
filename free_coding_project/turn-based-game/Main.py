@@ -4,7 +4,7 @@ import readchar
 import time
 
 from game_manager import GameManager
-#from music_manager import MusicManager
+from music_manager import MusicManager
 
 def slow_print(text, delay=.025, new_line=True):
     for char in text:
@@ -20,7 +20,7 @@ def slow_print_and_input(text, delay=.025):
 def main():
     name = slow_print_and_input("What is your name?")
     game_manager = GameManager(name)
-    #music = MusicManager("music/Battle.wav")
+    music = MusicManager("music/Battle.wav")
 
     slow_print(f"Welcome {name}! (Press any key to continue)")
     readchar.readkey()
@@ -39,8 +39,8 @@ def main():
             if "battle" in key:
                 slow_print(data[key][0])
                 time.sleep(.5)
-                #exp = game_manager.battle_begin(data[key][1:], music)
-                #game_manager.battle_end(music, exp)
+                exp = game_manager.battle_begin(data[key][1:], music)
+                game_manager.battle_end(music, exp)
                 continue
             for line in data[key]:
                 slow_print(line.replace("${name}", game_manager.player.name))

@@ -1,7 +1,6 @@
 import pygame
 
 
-
 class MusicManager:
 
     def __init__(self, music_path):
@@ -16,8 +15,8 @@ class MusicManager:
 
         # 4. Start playing the song
 
-    def start_music(self):
-        pygame.mixer.music.play()
+    def start_music(self, loops=0):
+        pygame.mixer.music.play(loops=loops)
 
     def end_music(self):
         pygame.mixer.music.stop()
