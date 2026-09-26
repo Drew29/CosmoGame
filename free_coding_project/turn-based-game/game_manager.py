@@ -3,6 +3,8 @@ import time
 
 from battle import Battle
 from utah_fan import UtahFan
+from pikachu import Pikachu
+from ash import Ash
 from player import Player
 
 def slow_print(text, delay=.005, new_line=True):
@@ -114,6 +116,10 @@ class GameManager:
         for enemy in enemies:
             if enemy == "Utah Fan":
                 enemy_objects.append(UtahFan())
+            if enemy == "Pikachu":
+                enemy_objects.append(Pikachu())
+            if enemy == "Ash":
+                enemy_objects.append(Ash())
 
         music.start_music(loops=-1)
         battle = Battle(self.player, enemy_objects, music)
@@ -126,8 +132,11 @@ class GameManager:
 
     def battle_end(self, music, experience_points):
         #add experience points
-        print(f"You won! You got {experience_points} exp!")
-        self.player.current_experience += experience_points
-        if self.player.current_experience >= 100:
-            self.player.level_up()
-        music.end_music()
+        if experience_points > 0:
+            print(f"You won! You got {experience_points} exp!")
+            self.player.current_experience += experience_points
+            if self.player.current_experience >= 100:
+                self.player.level_up()
+            music.end_music()
+        else:
+            print("You loser you died")

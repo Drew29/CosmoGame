@@ -8,8 +8,12 @@
   "One of them looks a little annoyed, then they look at each other for a split second. One of them gives the other a slight nod, and then they start to walk towards us.",
   "\"${name}! Now's the time to prove yourself! I'll handle one, you get the other!"],
   "battle_tutorial": ["The Utah fan taunts at you as he approaches. \"It was nice knowing you, Cosmo.\"", "Utah Fan"],
-  "end_text": ["\"You did good!\" Remarked Bob, \"But it still took you kind of long.\"", "You both walk upstairs, and there's four more guys waiting for you.",
+  "text_1": ["\"You did good!\" Remarked Bob, \"But it still took you kind of long.\"", "You both walk upstairs, and there's four more guys waiting for you.",
   "\"HEY, WHERE ARE THE OTHER TWO!!!???\" One of them says angrily", "\"Bob looks at you, then says excitedly, \"Round 2!\""],
   "battle_2": ["Two of them look at you and say, \"This should be easy\"", "Utah Fan", "Utah Fan"],
-  "last_text": ["The end! You saved the day because I haven't made the rest of the story yet."]
+  "text_2": ["You and Bob are standing over the dead bodies of the Utah Fans.", "You're both cheering wildly.", "BOOOOM", "you explode", "everything fades to white", "you hear screaming"],
+  "battle_3": ["\"Pikachu, use thunderbolt!\"", "Pikachu"],
+  "text_3": ["\nYou killed my Pikachu!\" Ash yelled angrily!"],
+  "battle_4": ["Now I'm going to kill you!", "Ash"],
+  "text_4": ["Congrats, you are the Pokemon Champion now! You have beaten the game, ${name}!"]
 }

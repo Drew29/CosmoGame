@@ -41,6 +41,8 @@ def main():
                 time.sleep(.5)
                 exp = game_manager.battle_begin(data[key][1:], music)
                 game_manager.battle_end(music, exp)
+                if exp == 0:
+                    break
                 continue
             for line in data[key]:
                 slow_print(line.replace("${name}", game_manager.player.name))

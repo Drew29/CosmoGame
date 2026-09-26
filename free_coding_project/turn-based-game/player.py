@@ -45,6 +45,7 @@ class Player(Entity):
     def level_up(self):
         self.current_experience -= 100
         self.STAT_HEALTH += 5
+        self.health = self.STAT_HEALTH
         self.STAT_ATTACK += 5
         self.load_badges()
         print("You leveled up and your health and attack went up!")
