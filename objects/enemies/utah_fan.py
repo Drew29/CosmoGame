@@ -1,4 +1,4 @@
-from enemy import Enemy
+from objects.enemy import Enemy
 
 class UtahFan(Enemy):
     def __init__(self):

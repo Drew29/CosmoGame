@@ -3,8 +3,8 @@ import json
 import readchar
 import time
 
-from game_manager import GameManager
-from music_manager import MusicManager
+from management.game_manager import GameManager
+from management.music_manager import MusicManager
 
 def slow_print(text, delay=.025, new_line=True):
     for char in text:
@@ -33,7 +33,7 @@ def main():
     slow_print("You walk through the door.")
     readchar.readkey()
 
-    with open("intro.json", "r") as file:
+    with open("story_data/intro.json", "r") as file:
         data = json.load(file)
         for key in data.keys():
             if "battle" in key:

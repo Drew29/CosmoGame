@@ -1,6 +1,6 @@
 import random
 
-from entity import Entity
+from objects.entity import Entity
 
 
 class Player(Entity):

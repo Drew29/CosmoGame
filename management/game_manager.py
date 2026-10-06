@@ -1,11 +1,11 @@
 import os
 import time
 
-from battle import Battle
-from utah_fan import UtahFan
-from pikachu import Pikachu
-from ash import Ash
-from player import Player
+from management.battle import Battle
+from objects.enemies.utah_fan import UtahFan
+from objects.enemies.pikachu import Pikachu
+from objects.enemies.ash import Ash
+from objects.player import Player
 
 def slow_print(text, delay=.005, new_line=True):
     for i in range(len(text)):
