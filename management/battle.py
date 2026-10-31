@@ -56,7 +56,7 @@ class Battle:
 
             if self.player.is_dead:
                 self.player.die()
-                break
+                return 0
 
         return self.battle_experience
 

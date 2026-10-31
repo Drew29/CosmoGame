@@ -3,8 +3,8 @@ import json
 import readchar
 import time
 
-from game_manager import GameManager
-from music_manager import MusicManager
+from management.game_manager import GameManager
+from management.music_manager import MusicManager
 
 def slow_print(text, delay=.025, new_line=True):
     for char in text:
@@ -33,7 +33,7 @@ def main():
     slow_print("You walk through the door.")
     readchar.readkey()
 
-    with open("intro.json", "r") as file:
+    with open("story_data/intro.json", "r") as file:
         data = json.load(file)
         for key in data.keys():
             if "battle" in key:
@@ -41,48 +41,12 @@ def main():
                 time.sleep(.5)
                 exp = game_manager.battle_begin(data[key][1:], music)
                 game_manager.battle_end(music, exp)
+                if exp == 0:
+                    break
                 continue
             for line in data[key]:
                 slow_print(line.replace("${name}", game_manager.player.name))
                 readchar.readkey()
-    #music.start_music()
-
-    #planning
-    #slow_print(f"Welcome {name}! You are now Cosmo. What do you want to do? (type 'help' for options or 'battle' to battle)")
-    #game_manager.planning()
-
-
-    #slow_print("A wild creature attacks!", .005)
-
-    #time.sleep(.1)
-
-
-    """battle1 = Battle(game_manager.player, [Pikachu()], music)
-    battle1.battle()
-
-    music.end_music()
-    slow_print("The Pikachu is no more!", .1)
-"""
-    #time.sleep(2)
-
-    #music.start_music()
-    # slow_print("But two more want revenge!", .005)
-    # time.sleep(.5)
-    #
-    # if not game_manager.player.is_dead:
-    #     battle2 = Battle(game_manager.player, [Pikachu(), Pikachu()], music)
-    #     battle2.battle()
-    #
-    # #music.end_music()
-    # slow_print("The two of them didn't stand a chance.", .1)
-    # time.sleep(1)
-    # #music.start_music()
-    # slow_print("But three of them are determined to take you down!", .005)
-    # time.sleep(.5)
-    #
-    # if not game_manager.player.is_dead:
-    #     battle3 = Battle(game_manager.player, [Pikachu(), Pikachu(), Pikachu()], music)
-    #     battle3.battle()
 
     if not game_manager.player.is_dead:
         print("You Win!")
